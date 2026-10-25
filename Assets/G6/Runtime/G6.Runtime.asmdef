@@ -1,0 +1,10 @@
+{
+    "name": "G6.Runtime",
+    "rootNamespace": "G6",
+    "references": [
+        "Unity.TextMeshPro",
+        "Unity.InputSystem",
+        "UnityEngine.UI"
+    ],
+    "autoReferenced": true
+}

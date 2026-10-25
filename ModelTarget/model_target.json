@@ -1,0 +1,49 @@
+{
+  "name": "G6_ArduinoMega",
+  "models": [
+    {
+      "name": "ArduinoMega",
+      "cadDataUrl": "C:/Users/Sefer/UnityProjects/G6_NesneTakibi/ModelTarget/arduino_mega.dae",
+      "optimizeTrackingFor": "default",
+      "automaticColoring": "auto",
+      "upVector": [0.0, 1.0, 0.0],
+      "views": [
+        {
+          "name": "UstOn",
+          "guideViewPosition": {
+            "translation": [0.00318, 0.24431, -0.14875],
+            "rotation": [0.000000, 0.874643, 0.484769, 0.000000]
+          }
+        },
+        {
+          "name": "UsbTarafi",
+          "guideViewPosition": {
+            "translation": [0.17304, 0.22713, -0.03397],
+            "rotation": [-0.277361, 0.695409, 0.338326, 0.570099]
+          }
+        },
+        {
+          "name": "PinTarafi",
+          "guideViewPosition": {
+            "translation": [-0.16669, 0.22713, 0.03397],
+            "rotation": [-0.338326, -0.570099, -0.277361, 0.695409]
+          }
+        },
+        {
+          "name": "UstArka",
+          "guideViewPosition": {
+            "translation": [0.00318, 0.24431, 0.14875],
+            "rotation": [-0.484769, 0.000000, 0.000000, 0.874643]
+          }
+        },
+        {
+          "name": "Capraz",
+          "guideViewPosition": {
+            "translation": [0.12792, 0.22460, -0.12474],
+            "rotation": [-0.164923, 0.833680, 0.398159, 0.345322]
+          }
+        }
+      ]
+    }
+  ]
+}

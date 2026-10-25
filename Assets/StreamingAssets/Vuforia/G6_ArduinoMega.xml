@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="ArduinoMega" motionHint="adaptive" trackingMode="car" optimizeTrackingFor="default"/>
+
+</Tracking>
+
+<Assembly name="ArduinoMegas_assembly" assemblyId="a35cd1dbf2724ff196e95c156f696e50">
+<Part name="ArduinoMega" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="UstOn" translation="0.00318 0.00334422 0.286012" rotation="AD: 0 -1.14332 2.06284 180" trained="no">
+
+</EntryPoint>
+<EntryPoint name="UsbTarafi" translation="0.000625636 0.00144255 0.287545" rotation="AD: -0.924376 -0.548572 1.12756 147.794" trained="no">
+
+</EntryPoint>
+<EntryPoint name="PinTarafi" translation="-0.000619747 0.00634167 0.283702" rotation="AD: 0.97511 -0.388918 0.799399 219.55" trained="no">
+
+</EntryPoint>
+<EntryPoint name="UstArka" translation="-0.00318 0.00334422 0.286012" rotation="AD: 1 0 0 237.995" trained="no">
+
+</EntryPoint>
+<EntryPoint name="Capraz" translation="0.00224844 0.00221408 0.286982" rotation="AD: -0.720941 -0.83125 1.7405 161.014" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

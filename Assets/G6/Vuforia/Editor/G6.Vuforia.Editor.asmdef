@@ -1,0 +1,23 @@
+{
+    "name": "G6.Vuforia.Editor",
+    "rootNamespace": "G6.EditorTools",
+    "references": [
+        "G6.Runtime",
+        "G6.Editor",
+        "G6.Vuforia",
+        "VuforiaScripts"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "defineConstraints": [
+        "VUFORIA_PRESENT"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.ptc.vuforia.engine",
+            "expression": "",
+            "define": "VUFORIA_PRESENT"
+        }
+    ]
+}

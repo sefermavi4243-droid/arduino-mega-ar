@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="11.4.4">
+<ModelTarget name="Zimba" targetId="034c546be0994fd5867f92fa97355342" version="14.0" toolVersion="11.4.4" bbox="-0.019 0 -0.0685 0.019 0.05 0.06" upVector="0 1 0" previewImage="034c546be0994fd5867f92fa97355342_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Zimbas_assembly" assemblyId="285781c81c9945ed8c09590ea918489a">
+<Part name="Zimba" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="OndenSol" translation="-0.0020429 0.0238609 0.342438" rotation="AD: 0.999883 0.0633966 -0.256827 206.844" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="OndenSag" translation="0.0020429 0.0238609 0.342438" rotation="AD: 0.999883 -0.0633966 0.256827 206.844" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="SolYan" translation="-0.00423019 0.0229951 0.343929" rotation="AD: 0.992046 0.191824 -0.897789 197.825" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="SagYan" translation="0.00423019 0.0229951 0.343929" rotation="AD: 0.992046 -0.191824 0.897789 197.825" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="Arkadan" translation="0.00121679 0.0196465 0.350082" rotation="AD: 0.498659 -0.906748 3.39757 184.292" image="" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

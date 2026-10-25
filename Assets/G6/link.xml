@@ -1,0 +1,8 @@
+<!-- Etiket noktaları GameObject.CreatePrimitive(Sphere) ile çalışma anında üretiliyor. Sahnede SphereCollider
+     olmadığı için Android derlemesinde kod küçültme bu sınıfı siliyordu; burada korunuyor. -->
+<linker>
+  <assembly fullname="UnityEngine.PhysicsModule">
+    <type fullname="UnityEngine.SphereCollider" preserve="all"/>
+    <type fullname="UnityEngine.CapsuleCollider" preserve="all"/>
+  </assembly>
+</linker>

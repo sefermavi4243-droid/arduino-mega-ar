@@ -1,0 +1,19 @@
+{
+    "name": "G6.Vuforia",
+    "rootNamespace": "G6",
+    "references": [
+        "G6.Runtime",
+        "Unity.InputSystem",
+        "UnityEngine.UI"
+    ],
+    "defineConstraints": [
+        "VUFORIA_PRESENT"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.ptc.vuforia.engine",
+            "expression": "",
+            "define": "VUFORIA_PRESENT"
+        }
+    ]
+}

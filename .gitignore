@@ -1,0 +1,30 @@
+# Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.apk
+*.aab
+.vs/
+.idea/
+.DS_Store
+# Vuforia lisans anahtarını içeren yapılandırma depoya girmesin
+/Assets/Resources/VuforiaConfiguration.asset
+/Assets/Resources/VuforiaConfiguration.asset.meta
+/ModelTarget/cikti/
+# Vuforia paketi (138 MB, PTC lisansı): developer.vuforia.com'dan indirilip Packages/ altına konur
+/Packages/com.ptc.vuforia.engine-*.tgz
+# Vuforia ve Unity'nin çalışma anı geçici klasörleri
+/.utmp/
+/QCAR/

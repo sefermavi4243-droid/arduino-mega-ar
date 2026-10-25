@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="11.4.4">
+<ModelTarget name="ArduinoMega" targetId="1ff33e72596c4e95884c9df026b1ad6a" version="14.0" toolVersion="11.4.4" bbox="-0.05715 0 -0.02667 0.0508 0.0126 0.02667" upVector="0 1 0" previewImage="1ff33e72596c4e95884c9df026b1ad6a_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="ArduinoMegas_assembly" assemblyId="a35cd1dbf2724ff196e95c156f696e50">
+<Part name="ArduinoMega" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="UstOn" translation="0.00318 0.00334422 0.286012" rotation="AD: 0 -1.14332 2.06284 180" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="UsbTarafi" translation="0.000625636 0.00144255 0.287545" rotation="AD: -0.924376 -0.548572 1.12756 147.794" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="PinTarafi" translation="-0.000619747 0.00634167 0.283702" rotation="AD: 0.97511 -0.388918 0.799399 219.55" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="UstArka" translation="-0.00318 0.00334422 0.286012" rotation="AD: 1 0 0 237.995" image="" trained="no">
+
+</EntryPoint>
+<EntryPoint name="Capraz" translation="0.00224844 0.00221408 0.286982" rotation="AD: -0.720941 -0.83125 1.7405 161.014" image="" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

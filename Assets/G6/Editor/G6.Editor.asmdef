@@ -1,0 +1,13 @@
+{
+    "name": "G6.Editor",
+    "rootNamespace": "G6.EditorTools",
+    "references": [
+        "G6.Runtime",
+        "Unity.TextMeshPro",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Core.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ]
+}

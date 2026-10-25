@@ -1,0 +1,49 @@
+{
+  "name": "G6_Zimba",
+  "models": [
+    {
+      "name": "Zimba",
+      "cadDataUrl": "C:/Users/Sefer/UnityProjects/G6_NesneTakibi/ModelTarget/zimba.dae",
+      "optimizeTrackingFor": "default",
+      "automaticColoring": "auto",
+      "upVector": [0.0, 1.0, 0.0],
+      "views": [
+        {
+          "name": "OndenSol",
+          "guideViewPosition": {
+            "translation": [0.14251, 0.18047, 0.25487],
+            "rotation": [-0.232119, 0.241531, 0.059621, 0.940334]
+          }
+        },
+        {
+          "name": "OndenSag",
+          "guideViewPosition": {
+            "translation": [-0.14251, 0.18047, 0.25487],
+            "rotation": [-0.232119, -0.241531, -0.059621, 0.940334]
+          }
+        },
+        {
+          "name": "SolYan",
+          "guideViewPosition": {
+            "translation": [0.30341, 0.16154, 0.02609],
+            "rotation": [-0.154924, 0.656194, 0.140204, 0.725087]
+          }
+        },
+        {
+          "name": "SagYan",
+          "guideViewPosition": {
+            "translation": [-0.30341, 0.16154, 0.02609],
+            "rotation": [-0.154924, -0.656194, -0.140204, 0.725087]
+          }
+        },
+        {
+          "name": "Arkadan",
+          "guideViewPosition": {
+            "translation": [-0.08324, 0.19147, -0.28170],
+            "rotation": [0.037444, 0.955942, 0.255123, -0.140303]
+          }
+        }
+      ]
+    }
+  ]
+}
