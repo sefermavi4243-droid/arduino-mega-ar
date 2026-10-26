@@ -100,6 +100,10 @@ namespace G6
             LayoutColumn(false, top, bottom, cardH, step, cardW, margin);
         }
 
+        /// <summary>
+        /// Bir sütundaki (sol ya da sağ) kartları dikey olarak dizer. Her kart önce kendi parçasının hizasına
+        /// yerleşmek ister; çakışan kartlar aşağı, ekrandan taşanlar yukarı itilir.
+        /// </summary>
         void LayoutColumn(bool right, float top, float bottom, float cardH, float step, float cardW, float margin)
         {
             column.Clear();

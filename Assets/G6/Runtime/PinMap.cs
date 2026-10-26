@@ -39,9 +39,11 @@ namespace G6
             var parts = new Dictionary<string, Transform>();
             foreach (var p in GetComponentsInChildren<PartView>()) parts[p.partId] = p.transform;
 
+            // Tüm pin yazıları aynı ölçekle çizilir: harf boyu gerçek dünyada 1,6 mm (pin aralığı 2,54 mm).
             float scale = MeasureScale();
             foreach (var pin in pins)
             {
+                // Pin yazısı ait olduğu başlığın (ör. "dijital") çocuğu olur; parça patlatılınca yazılar da onunla gider.
                 Transform parent = parts.TryGetValue(pin.partId, out var t) ? t : transform;
 
                 var go = new GameObject("Pin_" + pin.name);

@@ -255,11 +255,21 @@ namespace G6
         /// <summary>Nesne aranırken tarama halkasını göster, bulununca araç çubuğunu getir.</summary>
         public void SetTracking(bool tracked)
         {
-            scanning = !tracked;
+            selfTracked = tracked;
+            scanning = !tracked && !otherTracked;
             toolbarVisible = tracked;
             toolbarGroup.interactable = tracked;
             toolbarGroup.blocksRaycasts = tracked;
         }
+
+        /// <summary>Sahnedeki başka bir hedef (ör. ekibin kitap veya dinozor hedefi) takipteyse tarama halkası gizlenir.</summary>
+        public void SetOtherTargetTracked(bool on)
+        {
+            otherTracked = on;
+            scanning = !selfTracked && !on;
+        }
+
+        bool selfTracked, otherTracked;
 
         public void ShowInfo(PartView part, int index, int total)
         {

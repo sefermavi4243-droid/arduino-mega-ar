@@ -40,10 +40,12 @@ namespace G6
 
         void Start()
         {
+            // Hologramın üzerindeki isteğe bağlı özellikleri bul (yoksa null kalır, düğmesi de çıkmaz).
             pinMap = twin.GetComponent<PinMap>();
             energy = twin.GetComponent<EnergyFlow>();
             blink = twin.GetComponent<BlinkDemo>();
 
+            // Takip kaynağını seç ve arayüzü kodla oluştur (sahnede hazır UI yok; hepsi AppUI.Create ile kurulur).
             source = PickSource();
             sfx = gameObject.AddComponent<SfxPlayer>();
             ui = AppUI.Create(this, source != null && source.IsSimulation);
@@ -93,6 +95,10 @@ namespace G6
             return sim;
         }
 
+        /// <summary>
+        /// Takip kaynağı "bulundu" ya da "kayboldu" dediğinde çalışır. Bulununca hologram taranarak belirir,
+        /// ses ve titreşim verilir; kaybolunca hologram, etiketler ve bilgi kartı kapanır, tarama halkası döner.
+        /// </summary>
         void OnTrackingChanged(bool tracked)
         {
             ui.SetTracking(tracked);
@@ -150,6 +156,10 @@ namespace G6
             HandleTap(pos);
         }
 
+        /// <summary>
+        /// Ekrana dokunulan noktadan sahneye görünmez bir ışın (raycast) gönderir. Işın bir parçanın
+        /// collider'ına çarparsa o parça seçilir.
+        /// </summary>
         void HandleTap(Vector2 screenPos)
         {
             var cam = Camera.main;
@@ -170,6 +180,7 @@ namespace G6
             Select(part == null || twin.Selected == part ? null : part);
         }
 
+        /// <summary>Parçayı seçer: parça parlar, etiketi öne çıkar, alttan bilgi kartı açılır. null = seçimi kaldır.</summary>
         public void Select(PartView part)
         {
             twin.Select(part);
@@ -298,6 +309,9 @@ namespace G6
         }
 
         public void CloseInfo() => Select(null);
+
+        /// <summary>Sahnedeki başka bir nesne takip edilirken arayüz tarama halkasını gizler.</summary>
+        public void SetOtherTargetTracked(bool on) => ui.SetOtherTargetTracked(on);
 
         /// <summary>Quiz'de sorulan parça (quiz kapalıysa null). Sunum videosu kaydı için.</summary>
         public PartView QuizCurrent => quiz.Active ? quiz.Current : null;
