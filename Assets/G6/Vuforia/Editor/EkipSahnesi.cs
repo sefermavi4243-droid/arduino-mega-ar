@@ -51,8 +51,10 @@ namespace G6.EditorTools
                     foreach (var mt in root.GetComponentsInChildren<Vuforia.ModelTargetBehaviour>(true))
                     {
                         // Kapalı başlar: Vuforia aynı anda tek Model Target etkin tutar, sırayı
-                        // VuforiaModelTargetLoader yönetir. Silüet de kapalı.
-                        mt.GuideViewMode = Vuforia.ModelTargetBehaviour.GuideViewDisplayMode.NoGuideView;
+                        // VuforiaModelTargetLoader yönetir. 360° (Advanced) hedefte silüete gerek yok; tek açılı
+                        // hedefler (dinozor) ise silüet olmadan kolay bulunamaz, onlarda ekip üyesinin ayarı kalır.
+                        if (new SerializedObject(mt).FindProperty("mDataSetPath").stringValue.Contains("Advanced"))
+                            mt.GuideViewMode = Vuforia.ModelTargetBehaviour.GuideViewDisplayMode.NoGuideView;
                         mt.enabled = false;
                         EditorUtility.SetDirty(mt);
                     }

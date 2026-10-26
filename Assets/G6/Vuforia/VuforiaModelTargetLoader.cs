@@ -169,7 +169,9 @@ namespace G6
             // 360° (Advanced) hedefler her etkinleşmede birkaç saniye hazırlanır: hazırlanırken süre yavaş akar
             // (hedefe yaklaşık 3 kat süre tanınır), ama hazırlık bitmese de sıra kilitlenmez.
             timer += Time.deltaTime * (infos[active] == StatusInfo.INITIALIZING ? 0.35f : 1f);
-            if (timer < cycleSeconds) return;
+            // Ekip hedeflerine (silüetle hizalama gerekebilir) Arduino'dan 2,5 kat uzun süre tanınır.
+            float slot = active == modelTarget ? cycleSeconds : cycleSeconds * 2.5f;
+            if (timer < slot) return;
             timer = 0f;
 
             // Sıradaki hedefe geç. Arduino'nun sırası geldiğinde bir sonraki kılavuz açısı denenir
