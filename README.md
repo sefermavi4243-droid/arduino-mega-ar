@@ -123,14 +123,24 @@ Assets/G6/
     BlinkDemo.cs               Sanal LED + canlı kod vurgusu
     TrackingSource.cs          Takip soyutlaması (bulundu / kayboldu)
     SimulatedTrackingSource.cs Editörde kartsız deneme
+    PartView.cs / PartLabel.cs Tek parça görünümü ve ona bağlı etiket
+    QuizController.cs          "Dokun!" soruları
+    SfxPlayer.cs               Koddan üretilen geri bildirim sesleri
+    UIFactory.cs               Arayüz için çalışma anında üretilen sprite'lar
+    DemoCapture.cs             -g6shots ile otomatik ekran görüntüsü
+    VideoCapture.cs            -g6video ile kare kare video kaydı
   Vuforia/                     Yalnızca Vuforia paketi varken derlenir (VUFORIA_PRESENT)
     VuforiaModelTargetLoader.cs  Hedefleri çalışma anında oluşturur
     VuforiaTrackingSource.cs     Birden fazla hedefi tek pozda birleştirir
+    Editor/VuforiaWiring.cs      Gerçek cihaz için AR sahnesini kurar
+    Editor/EkipSahnesi.cs        Ekibin üç nesnesini tek sahnede birleştirir
   Editor/
     ArduinoMegaModel.cs        15 parça: .brd dosyasından ölçüler, açıklamalar
     ArduinoMegaPins.cs         Pin adları, renkleri, konumları; akım yolları
     SceneBuilder.cs            Sahneyi ve ikizi koddan kurar
     ObjExporter.cs             Modeli DAE/OBJ'ye ve Model Target JSON'una yazar
+    ProjectSetup.cs            URP, TextMeshPro ve Android ayarlarını tek komutla hazırlar
+    DevBuild.cs                Batchmode derleme (sahne + Windows oyuncusu)
   Shaders/                     Hologram (Fresnel + tarama), Glow
 Tools/ModelTargetUret.ps1      Model Target CLI ile veritabanı üretimi
 Docs/                          Uygulama föyü, istem günlüğü, ekran görüntüleri
