@@ -28,3 +28,9 @@
 # Vuforia ve Unity'nin çalışma anı geçici klasörleri
 /.utmp/
 /QCAR/
+# Unity'nin ürettiği diğer geçici dosyalar
+*.pdb
+*.mdb
+sysinfo.txt
+crashlytics-build.properties
+.vscode/
