@@ -1,0 +1,23 @@
+# Unity YAML varlıkları: birleştirme çakışmalarında UnityYAMLMerge kullanılabilsin
+*.unity    merge=unityyamlmerge diff
+*.prefab   merge=unityyamlmerge diff
+*.asset    merge=unityyamlmerge diff
+*.mat      merge=unityyamlmerge diff
+*.anim     merge=unityyamlmerge diff
+*.controller merge=unityyamlmerge diff
+*.meta     merge=unityyamlmerge diff
+
+# İkili dosyalar: satır sonu dönüşümü ve metin diff'i yapılmasın
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.mp4  binary
+*.fbx  binary
+*.obj  binary
+*.ttf  binary
+*.otf  binary
+*.dat  binary
+*.xml  text
+*.pdf  binary
+*.zip  binary
