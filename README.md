@@ -152,6 +152,7 @@ Docs/                          Uygulama föyü, istem günlüğü, ekran görün
 
 - [Uygulama föyü](Docs/Uygulama_Foyu.md): 40 dakikalık ders akışı, anlatım notları, adım adım canlı uygulama
 - [İstem günlüğü](Docs/Istem_Gunlugu.md): kullanılan istemler, karşılaşılan hatalar ve düzeltmeleri
+- [Sorun giderme](Docs/Sorun_Giderme.md): sık karşılaşılan kurulum ve takip sorunları, çözümleri
 
 ## Bilinen sınırlar
 
