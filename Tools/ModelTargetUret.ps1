@@ -29,6 +29,9 @@ finally {
     $pass = $null
 }
 
-if ($code -eq 0) { Write-Host "`nModel Target üretildi: $out" -ForegroundColor Green }
+if ($code -eq 0) {
+    Write-Host "`nModel Target üretildi: $out" -ForegroundColor Green
+    Get-ChildItem $out -File | ForEach-Object { Write-Host ("  {0}  ({1:N0} KB)" -f $_.Name, ($_.Length / 1KB)) }
+}
 else { Write-Host "`nHata kodu: $code (100-110 arası: argüman, dosya veya imzalama hatası)" -ForegroundColor Red }
 Read-Host "Kapatmak için Enter"
