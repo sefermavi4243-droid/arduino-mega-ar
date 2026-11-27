@@ -109,6 +109,18 @@ Hedefler çalışma anında koddan oluşturulur (`ObserverFactory.CreateModelTar
 
 Sahne bozulursa **G6 › Sahneyi Kur** menüsü onu sıfırdan kurar.
 
+### Model Target'ı yeniden üretmek
+
+1. Unity'de **G6 › Vuforia › Model Target dosyalarını hazırla** menüsünü çalıştırın. `ModelTarget/model_target.json` oluşur.
+2. Vuforia Model Target CLI'yi `%USERPROFILE%\Tools\vuforia-mt-cli\` klasörüne kurun. Farklı bir konum için `-Cli` parametresini kullanın.
+3. Betiği çalıştırın:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File Tools\ModelTargetUret.ps1
+```
+
+Vuforia e-posta ve şifresi yalnızca bu pencerede sorulur, hiçbir dosyaya yazılmaz. Çıktı `ModelTarget/cikti/` klasörüne düşer.
+
 ## Proje yapısı
 
 ```
